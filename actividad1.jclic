@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="actividad1" version="0.1.3">
+ <settings>
+  <title>ACTIVIDAD1</title>
+  <revision description="created" date="3/7/25" />
+  <description>
+   <p>REALIZAREMOS ACTIVIDADES PARA PODER A PRUEBA LO APRENDDO EN CLASE.</p>
+  </description>
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>REALIZAREMOS ACTIVIDADES PARA PODER A PRUEBA LO APRENDDO EN CLASE.</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="memoria" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0" />
+     <p>BIENBENIDOS AL JUEGO DE MEMORIA</p>
+    </cell>
+    <cell type="finalError">
+     <style />
+     <p>¡INTENTALO NUEVAMENTE ...!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66FFCC">
+     <counters time="false" actions="true" score="true" />
+    </container>
+    <window bgColor="0x9999FF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="103.0" cellHeight="103.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="Memoria-RAM-resized.jpg" />
+    <cell image="Procesador-resized.jpg" />
+    <cell image="TARJETA MADRE.png" />
+    <cell image="Tarjeta-gráfica-resized.jpg" />
+   </cells>
+   <cells rows="2" cols="2" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <cell>
+     <p>MEMORIA RAN</p>
+    </cell>
+    <cell>
+     <p>PROCESADOR</p>
+    </cell>
+    <cell>
+     <p>TARJETA MADRE</p>
+    </cell>
+    <cell>
+     <p>TARJETA GRÁFICA</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Memoria-RAM-resized.jpg" file="Memoria-RAM-resized.jpg" />
+  <media name="Procesador-resized.jpg" file="Procesador-resized.jpg" />
+  <media name="Tarjeta-gráfica-resized.jpg" file="Tarjeta-gráfica-resized.jpg" />
+  <media name="TARJETA MADRE.png" file="TARJETA MADRE.png" />
+ </mediaBag>
+</JClicProject>
+
